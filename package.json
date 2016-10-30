@@ -1,0 +1,36 @@
+{
+  "name": "angular2_boilerplate",
+  "version": "1.0.0",
+  "scripts": {
+    "lite": "lite-server",
+    "gulp": "gulp",
+    "start": "concurrent \"npm run gulp\" \"npm run lite\" "
+  },
+  "license": "ISC",
+  "dependencies": {
+    "angular2": "2.0.0-beta.14",
+    "systemjs": "0.19.25",
+    "es6-shim": "^0.35.0",
+    "reflect-metadata": "0.1.2",
+    "rxjs": "5.0.0-beta.2",
+    "zone.js": "0.6.6"
+  },
+  "devDependencies": {
+    "concurrently": "^2.0.0",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-cached": "^1.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-debug": "^2.1.2",
+    "gulp-ext-replace": "^0.2.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-remember": "^0.3.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^2.1.1",
+    "gulp-typescript": "^2.10.0",
+    "gulp-uglify": "^2.0.0",
+    "lite-server": "^2.1.0"
+  }
+}

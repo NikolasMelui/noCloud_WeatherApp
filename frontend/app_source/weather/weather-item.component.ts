@@ -1,4 +1,5 @@
 import {Component} from 'angular2/core';
+import {WeatherItem} from "./weather-item";
 
 @Component({
     selector: 'weather-item',
@@ -6,8 +7,9 @@ import {Component} from 'angular2/core';
 })
 
 export class WeatherItemComponent {
+    weatherItem: WeatherItem;
 
     constructor() {
+        this.weatherItem = new WeatherItem('London', 'RAINY', 4);
     }
-
 }

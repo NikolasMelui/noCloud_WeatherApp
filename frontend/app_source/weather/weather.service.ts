@@ -2,9 +2,8 @@ import {Injectable} from "angular2/src/core/di/decorators";
 import {WEATHER_ITEMS} from "./weather.data";
 import {Observable} from "rxjs/Observable";
 import {Http} from "angular2/src/http/http";
-import 'rxjs/Rx';
+import "rxjs/Rx";
 import {WeatherItem} from "./weather-item";
-
 
 @Injectable()
 export class WeatherService {

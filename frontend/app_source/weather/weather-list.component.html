@@ -1,5 +1,1 @@
-<h4 class="ui horizontal divider header">
-    <i class="table red icon"></i>
-    Weather
-</h4>
-        <weather-item *ngFor="#weatherItem of weatherItems" [item]="weatherItem"></weather-item>
+<weather-item *ngFor=" let weatherItem of weatherItems" [item]="weatherItem"></weather-item>

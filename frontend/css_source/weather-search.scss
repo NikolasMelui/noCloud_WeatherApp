@@ -1,4 +1,12 @@
 .ui {
+  &.header:last-child {
+    margin-bottom: 26px;
+  }
+  &.table tr {
+    &:first-child td {
+      width: 69px;
+    }
+  }
   &.form {
     margin-top: 23px;
   }

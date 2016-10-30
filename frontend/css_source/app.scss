@@ -1,28 +1,5 @@
 .ui {
-  &.header:first-child {
-    margin-top: 13px;
-  }
-  &.definition.table {
-    tr td:first-child {
-      background: none;
-      width: 106px;
-      span {
-        color: darkgray;
-      }
-    }
-    td:nth-child(2) {
-      vertical-align: middle;
-      text-align: right;
-      width: 605px;
-    }
-  }
-  &.table tr {
-    td {
-      border-bottom: 1px solid rgba(34, 36, 38, 0.1);
-    }
-    &:first-child td {
-      width: 69px;
-      border-left: 1px solid rgba(34, 36, 38, 0.1);
-    }
+  &.text.container {
+    max-width: 775px !important;
   }
 }

@@ -1,0 +1,10 @@
+.ui {
+  &.header:first-child {
+    margin-top: 13px;
+  }
+  &.table tr {
+    &:first-child td {
+      width: 69px;
+    }
+  }
+}

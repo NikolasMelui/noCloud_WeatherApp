@@ -1,4 +1,4 @@
-<form class="ui form" (ngSubmit)="onSubmit(f)" #f="ngForm">
+<form class="ui form" (ngSubmit)="onSubmit()">
     <div class="ui action input">
         <input ngControl="location" type="text" placeholder="Search..." (input)="onSearchLocation(input.value)" required #input>
         <button class="ui blue button" type="submit">Add City</button>

@@ -18,14 +18,9 @@ export class WeatherSearchComponent implements OnInit {
 
     }
 
-    onSubmit(form: ControlGroup) {
-        this._weatherService.searchWeatherData(form.value.location)
-            .subscribe(
-                data => {
-                    const weatherItem = new WeatherItem(data.name, data.weather[0].main, data.main.temp);
+    onSubmit() {
+                    const weatherItem = new WeatherItem(this.data.name, this.data.weather[0].main, this.data.main.temp);
                     this._weatherService.addWeatherItem(weatherItem);
-                }
-            );
     }
 
     onSearchLocation(cityName: string) {
@@ -35,6 +30,8 @@ export class WeatherSearchComponent implements OnInit {
 
     ngOnInit() {
         this.searchStream
+            .debounceTime(300)
+            .distinctUntilChanged()
             .switchMap((input: string) => this._weatherService.searchWeatherData(input))
             .subscribe(
                 data => this.data = data

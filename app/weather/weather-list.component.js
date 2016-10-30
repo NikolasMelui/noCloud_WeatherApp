@@ -1,4 +1,4 @@
-System.register(['angular2/core', "./weather-item.component"], function(exports_1, context_1) {
+System.register(["angular2/core", "./weather-item.component", "./weather.data"], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', "./weather-item.component"], function(exports_
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, weather_item_component_1;
+    var core_1, weather_item_component_1, weather_data_1;
     var WeatherListComponent;
     return {
         setters:[
@@ -19,11 +19,17 @@ System.register(['angular2/core', "./weather-item.component"], function(exports_
             },
             function (weather_item_component_1_1) {
                 weather_item_component_1 = weather_item_component_1_1;
+            },
+            function (weather_data_1_1) {
+                weather_data_1 = weather_data_1_1;
             }],
         execute: function() {
             WeatherListComponent = (function () {
                 function WeatherListComponent() {
                 }
+                WeatherListComponent.prototype.ngOnInit = function () {
+                    this.weatherItems = weather_data_1.WEATHER_ITEMS;
+                };
                 WeatherListComponent = __decorate([
                     core_1.Component({
                         selector: 'weather-list',
@@ -39,4 +45,4 @@ System.register(['angular2/core', "./weather-item.component"], function(exports_
     }
 });
 
-//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYXRoZXIvd2VhdGhlci1saXN0LmNvbXBvbmVudC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztZQVNBO2dCQUVJO2dCQUNBLENBQUM7Z0JBVEw7b0JBQUMsZ0JBQVMsQ0FBQzt3QkFDUCxRQUFRLEVBQUUsY0FBYzt3QkFDeEIsV0FBVyxFQUFFLDJDQUEyQzt3QkFDeEQsVUFBVSxFQUFFLENBQUMsNkNBQW9CLENBQUM7cUJBQ3JDLENBQUM7O3dDQUFBO2dCQU9GLDJCQUFDO1lBQUQsQ0FMQSxBQUtDLElBQUE7WUFMRCx1REFLQyxDQUFBIiwiZmlsZSI6IndlYXRoZXIvd2VhdGhlci1saXN0LmNvbXBvbmVudC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7Q29tcG9uZW50fSBmcm9tICdhbmd1bGFyMi9jb3JlJztcclxuaW1wb3J0IHtXZWF0aGVySXRlbUNvbXBvbmVudH0gZnJvbSBcIi4vd2VhdGhlci1pdGVtLmNvbXBvbmVudFwiO1xyXG5cclxuQENvbXBvbmVudCh7XHJcbiAgICBzZWxlY3RvcjogJ3dlYXRoZXItbGlzdCcsXHJcbiAgICB0ZW1wbGF0ZVVybDogJy4vYXBwL3dlYXRoZXIvd2VhdGhlci1saXN0LmNvbXBvbmVudC5odG1sJyxcclxuICAgIGRpcmVjdGl2ZXM6IFtXZWF0aGVySXRlbUNvbXBvbmVudF1cclxufSlcclxuXHJcbmV4cG9ydCBjbGFzcyBXZWF0aGVyTGlzdENvbXBvbmVudCB7XHJcblxyXG4gICAgY29uc3RydWN0b3IoKSB7XHJcbiAgICB9XHJcblxyXG59Il19
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYXRoZXIvd2VhdGhlci1saXN0LmNvbXBvbmVudC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztZQVlBO2dCQUFBO2dCQU9BLENBQUM7Z0JBSkcsdUNBQVEsR0FBUjtvQkFDSSxJQUFJLENBQUMsWUFBWSxHQUFHLDRCQUFhLENBQUM7Z0JBQ3RDLENBQUM7Z0JBWEw7b0JBQUMsZ0JBQVMsQ0FBQzt3QkFDUCxRQUFRLEVBQUUsY0FBYzt3QkFDeEIsV0FBVyxFQUFFLDJDQUEyQzt3QkFDeEQsVUFBVSxFQUFFLENBQUMsNkNBQW9CLENBQUM7cUJBQ3JDLENBQUM7O3dDQUFBO2dCQVNGLDJCQUFDO1lBQUQsQ0FQQSxBQU9DLElBQUE7WUFQRCx1REFPQyxDQUFBIiwiZmlsZSI6IndlYXRoZXIvd2VhdGhlci1saXN0LmNvbXBvbmVudC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7Q29tcG9uZW50fSBmcm9tIFwiYW5ndWxhcjIvY29yZVwiO1xyXG5pbXBvcnQge1dlYXRoZXJJdGVtQ29tcG9uZW50fSBmcm9tIFwiLi93ZWF0aGVyLWl0ZW0uY29tcG9uZW50XCI7XHJcbmltcG9ydCB7V2VhdGhlckl0ZW19IGZyb20gXCIuL3dlYXRoZXItaXRlbVwiO1xyXG5pbXBvcnQge09uSW5pdH0gZnJvbSBcImFuZ3VsYXIyL3NyYy9jb3JlL2xpbmtlci9pbnRlcmZhY2VzXCI7XHJcbmltcG9ydCB7V0VBVEhFUl9JVEVNU30gZnJvbSBcIi4vd2VhdGhlci5kYXRhXCI7XHJcblxyXG5AQ29tcG9uZW50KHtcclxuICAgIHNlbGVjdG9yOiAnd2VhdGhlci1saXN0JyxcclxuICAgIHRlbXBsYXRlVXJsOiAnLi9hcHAvd2VhdGhlci93ZWF0aGVyLWxpc3QuY29tcG9uZW50Lmh0bWwnLFxyXG4gICAgZGlyZWN0aXZlczogW1dlYXRoZXJJdGVtQ29tcG9uZW50XVxyXG59KVxyXG5cclxuZXhwb3J0IGNsYXNzIFdlYXRoZXJMaXN0Q29tcG9uZW50IGltcGxlbWVudHMgT25Jbml0IHtcclxuICAgIHdlYXRoZXJJdGVtczogV2VhdGhlckl0ZW1bXTtcclxuXHJcbiAgICBuZ09uSW5pdCgpOiBhbnkge1xyXG4gICAgICAgIHRoaXMud2VhdGhlckl0ZW1zID0gV0VBVEhFUl9JVEVNUztcclxuICAgIH1cclxuXHJcbn0iXX0=

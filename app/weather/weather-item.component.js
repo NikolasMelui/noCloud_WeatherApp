@@ -1,4 +1,4 @@
-System.register(['angular2/core'], function(exports_1, context_1) {
+System.register(['angular2/core', "./weather-item", "angular2/src/core/metadata"], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,21 +10,31 @@ System.register(['angular2/core'], function(exports_1, context_1) {
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1;
+    var core_1, weather_item_1, metadata_1;
     var WeatherItemComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
+            },
+            function (weather_item_1_1) {
+                weather_item_1 = weather_item_1_1;
+            },
+            function (metadata_1_1) {
+                metadata_1 = metadata_1_1;
             }],
         execute: function() {
             WeatherItemComponent = (function () {
                 function WeatherItemComponent() {
                 }
+                __decorate([
+                    metadata_1.Input('item'), 
+                    __metadata('design:type', weather_item_1.WeatherItem)
+                ], WeatherItemComponent.prototype, "weatherItem", void 0);
                 WeatherItemComponent = __decorate([
                     core_1.Component({
                         selector: 'weather-item',
-                        templateUrl: './app/weather/weather-item.component.html',
+                        templateUrl: './app/weather/weather-item.component.html'
                     }), 
                     __metadata('design:paramtypes', [])
                 ], WeatherItemComponent);
@@ -35,4 +45,4 @@ System.register(['angular2/core'], function(exports_1, context_1) {
     }
 });
 
-//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYXRoZXIvd2VhdGhlci1pdGVtLmNvbXBvbmVudC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7OztZQVFBO2dCQUFBO2dCQUVBLENBQUM7Z0JBUEQ7b0JBQUMsZ0JBQVMsQ0FBQzt3QkFDUCxRQUFRLEVBQUUsY0FBYzt3QkFDeEIsV0FBVyxFQUFFLDJDQUEyQztxQkFDM0QsQ0FBQzs7d0NBQUE7Z0JBSUYsMkJBQUM7WUFBRCxDQUZBLEFBRUMsSUFBQTtZQUZELHVEQUVDLENBQUEiLCJmaWxlIjoid2VhdGhlci93ZWF0aGVyLWl0ZW0uY29tcG9uZW50LmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHtDb21wb25lbnR9IGZyb20gJ2FuZ3VsYXIyL2NvcmUnO1xyXG5pbXBvcnQge1dlYXRoZXJJdGVtfSBmcm9tIFwiLi93ZWF0aGVyLWl0ZW1cIjtcclxuXHJcbkBDb21wb25lbnQoe1xyXG4gICAgc2VsZWN0b3I6ICd3ZWF0aGVyLWl0ZW0nLFxyXG4gICAgdGVtcGxhdGVVcmw6ICcuL2FwcC93ZWF0aGVyL3dlYXRoZXItaXRlbS5jb21wb25lbnQuaHRtbCcsXHJcbn0pXHJcblxyXG5leHBvcnQgY2xhc3MgV2VhdGhlckl0ZW1Db21wb25lbnQge1xyXG4gICAgd2VhdGhlckl0ZW06IFdlYXRoZXJJdGVtO1xyXG59Il19
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYXRoZXIvd2VhdGhlci1pdGVtLmNvbXBvbmVudC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztZQVNBO2dCQUFBO2dCQUVBLENBQUM7Z0JBREc7b0JBQUMsZ0JBQUssQ0FBQyxNQUFNLENBQUM7O3lFQUFBO2dCQU5sQjtvQkFBQyxnQkFBUyxDQUFDO3dCQUNQLFFBQVEsRUFBRSxjQUFjO3dCQUN4QixXQUFXLEVBQUUsMkNBQTJDO3FCQUMzRCxDQUFDOzt3Q0FBQTtnQkFJRiwyQkFBQztZQUFELENBRkEsQUFFQyxJQUFBO1lBRkQsdURBRUMsQ0FBQSIsImZpbGUiOiJ3ZWF0aGVyL3dlYXRoZXItaXRlbS5jb21wb25lbnQuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQge0NvbXBvbmVudH0gZnJvbSAnYW5ndWxhcjIvY29yZSc7XHJcbmltcG9ydCB7V2VhdGhlckl0ZW19IGZyb20gXCIuL3dlYXRoZXItaXRlbVwiO1xyXG5pbXBvcnQge0lucHV0fSBmcm9tIFwiYW5ndWxhcjIvc3JjL2NvcmUvbWV0YWRhdGFcIjtcclxuXHJcbkBDb21wb25lbnQoe1xyXG4gICAgc2VsZWN0b3I6ICd3ZWF0aGVyLWl0ZW0nLFxyXG4gICAgdGVtcGxhdGVVcmw6ICcuL2FwcC93ZWF0aGVyL3dlYXRoZXItaXRlbS5jb21wb25lbnQuaHRtbCdcclxufSlcclxuXHJcbmV4cG9ydCBjbGFzcyBXZWF0aGVySXRlbUNvbXBvbmVudCB7XHJcbiAgICBASW5wdXQoJ2l0ZW0nKSB3ZWF0aGVySXRlbTogV2VhdGhlckl0ZW07IC8vdXNpbmcgYWxpYXMgaGVyZSB0byBhdm9pZCBjb25mdXNpb25cclxufSJdfQ==

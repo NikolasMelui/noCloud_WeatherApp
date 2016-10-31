@@ -2,7 +2,7 @@
 <html>
 <head>
     <base href="/">
-    <title>noCloud - weatherApp</title>
+    <title>noCloud. The weather application.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Load libraries -->
     <!-- IE required polyfills, in this exact order -->
@@ -14,6 +14,7 @@
     <script src="node_modules/rxjs/bundles/Rx.js"></script>
     <script src="node_modules/angular2/bundles/angular2.js"></script>
     <script src="node_modules/angular2/bundles/router.dev.js"></script>
+    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
     <script src="node_modules/angular2/bundles/http.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.css">
     <link rel="stylesheet" href="css/app.css">
@@ -27,15 +28,15 @@
 
 <script>
     System.config({
+        map: {
+            rxjs: 'node_modules/rxjs' // added this map section
+        },
         packages: {
-            app: {
-                format: 'register',
-                defaultExtension: 'js'
-            }
+            'app': {defaultExtension: 'js'},
+            'rxjs': {defaultExtension: 'js'} // and added this to packages
         }
     });
-    System.import('app/boot')
-            .then(null, console.error.bind(console));
+    System.import('app/boot');
 </script>
 </body>
 </html>

@@ -28,15 +28,15 @@
 
 <script>
     System.config({
-    map: {
-        rxjs: 'node_modules/rxjs' // added this map section
-    },
-    packages: {
-        'app': {defaultExtension: 'js'},
-        'rxjs': {defaultExtension: 'js'} // and added this to packages
-    }
-});
-System.import('app/boot');
+        map: {
+            rxjs: 'node_modules/rxjs' // added this map section
+        },
+        packages: {
+            'app': {defaultExtension: 'js'},
+            'rxjs': {defaultExtension: 'js'} // and added this to packages
+        }
+    });
+    System.import('app/boot');
 </script>
 </body>
 </html>

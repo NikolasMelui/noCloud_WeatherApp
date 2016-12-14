@@ -61,14 +61,14 @@ gulp.task('buildCSS', function () {
 //Task build TS => JS
 gulp.task('buildJS', function () { 
     return gulp.src(frontend_app_path + '/**/*.ts') // Taking all the TS files from the specified directories
-        .pipe(plumber({ // Using plumber to trace errors in process of task execution
-            errorHandler: notify.onError(function (err) {
-                return {
-                    title: 'buildJS',
-                    message: err.message
-                };
-            })
-        }))
+        // .pipe(plumber({ // Using plumber to trace errors in process of task execution
+        //     errorHandler: notify.onError(function (err) {
+        //         return {
+        //             title: 'buildJS',
+        //             message: err.message
+        //         };
+        //     })
+        // }))
         .pipe(cached('buildJS')) // Excluding the same files
         .pipe(sourceMaps.init()) // Initializing sourcemaps
         .pipe(debug({title: 'initSourceMaps'})) // // Displaying the inscription about the latest ".pipe"зацию сорсмап

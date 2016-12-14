@@ -1,0 +1,19 @@
+.ui {
+  &.header:last-child {
+    margin-bottom: 26px;
+  }
+  &.table tr {
+    &:first-child td {
+      width: 69px;
+    }
+  }
+  &.form {
+    margin-top: 23px;
+  }
+  &.blue.button {
+    width: 15%;
+  }
+  &.action.input {
+    width: 87%;
+  }
+}

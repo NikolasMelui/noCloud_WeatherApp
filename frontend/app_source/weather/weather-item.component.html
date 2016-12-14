@@ -1,9 +1,8 @@
-<article>
-    <div class="col-1">
-        <h3>Cityname</h3>
-        <p class="info">CLOUDS</p>
-    </div>
-    <div class="col-2"></div>
-    <span class="temprature">39 C</span>
-    <div class="col-3"></div>
-</article>
+<table class="ui definition table">
+    <tbody>
+    <tr>
+        <td class="two wide column">{{ weatherItem.cityName }}<br><span>{{ weatherItem.description }}</span></td>
+        <td>{{ weatherItem.temperature }}º C</td>
+    </tr>
+    </tbody>
+</table>

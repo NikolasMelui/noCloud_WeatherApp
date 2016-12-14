@@ -1,4 +1,23 @@
-.divided.selection.list
-{
+.divided.selection.list {
   width: 50%;
+}
+
+.ui {
+  &.definition.table {
+    margin-bottom: 15px;
+    tr {
+      td:first-child {
+        background: none;
+        width: 106px;
+        span {
+          color: darkgray;
+        }
+      }
+      td:nth-child(2) {
+        vertical-align: middle;
+        text-align: right;
+        width: 667px;
+      }
+    }
+  }
 }

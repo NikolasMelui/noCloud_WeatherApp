@@ -1,22 +1,5 @@
-.ui.header:first-child {
-  margin-top: 13px;
-}
-
-.ui.definition.table tr td:first-child {
-  background: none;
-  width: 106px;
-  span {
-    color: darkgray;
+.ui {
+  &.text.container {
+    max-width: 775px !important;
   }
-}
-
-.ui.definition.table td:nth-child(2) {
-  vertical-align: middle;
-  text-align: right;
-  width: 605px;
-}
-
-.ui.table tr:first-child td {
-  width: 69px;
-  border-left: 1px solid rgba(34, 36, 38, .1);
 }

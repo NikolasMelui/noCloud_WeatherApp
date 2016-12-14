@@ -8,3 +8,21 @@
 - SCSS;
 - NPM;
 - GULP.
+
+<h3>Usage</h3>
+All you need is:
+
+1: Clone repository
+```
+git clone 
+```
+2: Install npm packages
+```
+npm install
+```
+3: Start npm "liteserver" and gulp features
+```
+npm start
+```
+<p>That's all! It's very simple to deploy it on your local machine, test and further develop.</p>
+<p>It is an opensource project! Take it and modify like you want!</p>
